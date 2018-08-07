@@ -13,7 +13,7 @@ import (
 )
 
 type Repo struct {
-	Name        string `json:"full_name"`
+	Name        string `json:"name"`
 	HtmlUrl     string `json:"html_url"`
 	Description string `json:"description"`
 	Language    string `json:"language"`
@@ -52,9 +52,9 @@ func main() {
 	sort.Strings(projectNames)
 
 	for _, n := range projectNames {
-		fmt.Printf("# %s\n\n", n)
+		fmt.Printf("# %s (%d)\n\n", n, len(*readme[n]))
 		for _, val := range *readme[n] {
-			fmt.Printf("* [%s](%s) %s\n", val.Name, val.HtmlUrl, val.Description)
+			fmt.Printf("* [%s](%s) - %s\n", val.Name, val.HtmlUrl, val.Description)
 		}
 		fmt.Printf("\n\n")
 	}
