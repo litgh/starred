@@ -22,63 +22,62 @@ type Repo struct {
 	Owner       string
 }
 
-type RepoSlice []*Repo
-
-func (r RepoSlice) Len() int      { return len(r) }
-func (r RepoSlice) Swap(i, j int) { r[i], r[j] = r[j], r[i] }
-func (r RepoSlice) Less(i, j int) bool {
-	if r[i].Language == r[j].Language {
-		if r[i].Owner == r[j].Owner {
-			return r[i].Name < r[j].Name
-		}
-		return r[i].Owner < r[j].Owner
-	}
-	return r[i].Language < r[j].Language
+type RepoSlice struct {
+	repos  []*Repo
+	client *http.Client
 }
 
-var repositories RepoSlice
+func (r RepoSlice) Len() int      { return len(r.repos) }
+func (r RepoSlice) Swap(i, j int) { r.repos[i], r.repos[j] = r.repos[j], r.repos[i] }
+func (r RepoSlice) Less(i, j int) bool {
+	if r.repos[i].Language == r.repos[j].Language {
+		if r.repos[i].Owner == r.repos[j].Owner {
+			return r.repos[i].Name < r.repos[j].Name
+		}
+		return r.repos[i].Owner < r.repos[j].Owner
+	}
+	return r.repos[i].Language < r.repos[j].Language
+}
+
+func (r *RepoSlice) print() {
+	sort.Sort(r)
+	var language string
+	for _, repo := range r.repos {
+		if language != repo.Language {
+			fmt.Printf("\n\n# %s\n\n", repo.Language)
+			language = repo.Language
+		}
+		fmt.Printf("* [%s](%s) - %s (%s)\n", repo.Name, repo.HtmlUrl, repo.Description, repo.Owner)
+	}
+}
+
 var next = regexp.MustCompile(`<(https://api\.github\.com/user/\d+/starred\?per_page=\d+&page=\d+)>; rel="next"`)
-var client *http.Client
 
 func main() {
 	dialer, err := proxy.SOCKS5("tcp", "127.0.0.1:1080", nil, proxy.Direct)
 	if err != nil {
 		panic(err)
 	}
-	transport := &http.Transport{
-		TLSHandshakeTimeout: 30 * time.Second,
-		Dial:                dialer.Dial,
-	}
-	client = &http.Client{
-		Transport: transport,
-	}
 
-	fetch("https://api.github.com/users/litgh/starred?per_page=100")
-
-	sort.Sort(repositories)
-
-	var language = struct {
-		Name string
-	}{}
-	for _, repo := range repositories {
-		if language.Name != repo.Language {
-			fmt.Printf("\n\n# %s\n\n", repo.Language)
-			language.Name = repo.Language
-		}
-		fmt.Printf("* [%s](%s) - %s (%s)\n", repo.Name, repo.HtmlUrl, repo.Description, repo.Owner)
+	var repositories = &RepoSlice{
+		client: &http.Client{
+			Transport: &http.Transport{
+				TLSHandshakeTimeout: 30 * time.Second,
+				Dial:                dialer.Dial,
+			},
+		},
 	}
+	repositories.fetch("https://api.github.com/users/litgh/starred?per_page=100")
+	repositories.print()
 }
 
-func fetch(url string) {
-	req, err := http.NewRequest("GET", url, nil)
-	resp, err := client.Do(req)
+func (r *RepoSlice) fetch(url string) {
+	req, _ := http.NewRequest("GET", url, nil)
+	resp, err := r.client.Do(req)
 	if err != nil {
 		panic(err)
 	}
 	defer resp.Body.Close()
-
-	links := resp.Header.Get("Link")
-	nextLink := next.FindStringSubmatch(links)
 
 	b, _ := ioutil.ReadAll(resp.Body)
 	var repos []*Repo
@@ -86,10 +85,11 @@ func fetch(url string) {
 
 	for _, repo := range repos {
 		repo.Owner = strings.Split(repo.FullName, "/")[0]
-		repositories = append(repositories, repo)
+		r.repos = append(r.repos, repo)
 	}
 
-	if len(nextLink) != 0 && nextLink[1] != "" {
-		fetch(nextLink[1])
+	link := next.FindStringSubmatch(resp.Header.Get("Link"))
+	if len(link) != 0 && link[1] != "" {
+		r.fetch(link[1])
 	}
 }

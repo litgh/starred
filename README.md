@@ -15,6 +15,7 @@
 * [http-api-design](https://github.com/interagent/http-api-design) - HTTP API design guide extracted from work on the Heroku Platform API (interagent)
 * [Single-Page-App-Break](https://github.com/island205/Single-Page-App-Break) - 单页应用开发权威指南 (island205)
 * [the-art-of-command-line](https://github.com/jlevy/the-art-of-command-line) - Master the command line, in one page (jlevy)
+* [awesome-web-dev-books](https://github.com/jobbole/awesome-web-dev-books) - 如果有人让你推荐前端技术书，请让他看这个列表 (jobbole)
 * [angular-styleguide](https://github.com/johnpapa/angular-styleguide) - Angular Style Guide: A starting point for Angular development teams to provide consistency through good practices. (johnpapa)
 * [coding-interview-university](https://github.com/jwasham/coding-interview-university) - A complete computer science study plan to become a software engineer. (jwasham)
 * [developer-roadmap](https://github.com/kamranahmedse/developer-roadmap) - Roadmap to becoming a web developer in 2018 (kamranahmedse)
@@ -183,6 +184,7 @@
 * [olricdb](https://github.com/buraksezer/olricdb) - Embeddable, in-memory and distributed key/value store for Go (buraksezer)
 * [cayley](https://github.com/cayleygraph/cayley) - An open-source graph database (cayleygraph)
 * [centrifugo](https://github.com/centrifugal/centrifugo) - Language-agnostic real-time messaging (Websocket and SockJS) server in Go (centrifugal)
+* [advanced-go-programming-book](https://github.com/chai2010/advanced-go-programming-book) - :books: 《Go语言高级编程》开源图书，涵盖CGO、Go汇编语言、RPC实现、Protobuf插件实现、Web框架实现、分布式系统等高阶主题 (chai2010)
 * [seaweedfs](https://github.com/chrislusf/seaweedfs) - SeaweedFS is a simple and highly scalable distributed file system. There are two objectives:  to store billions of files! to serve the files fast! SeaweedFS implements an object store with O(1) disk seek, and an optional Filer with POSIX interface. (chrislusf)
 * [chromedp](https://github.com/chromedp/chromedp) - A faster, simpler way to drive browsers supporting the Chrome DevTools Protocol. (chromedp)
 * [seelog](https://github.com/cihub/seelog) - Seelog is a native Go logging library that provides flexible asynchronous dispatching, filtering, and formatting. (cihub)
@@ -665,6 +667,7 @@
 * [spy-debugger](https://github.com/wuchangming/spy-debugger) - 微信调试，各种WebView样式调试、手机浏览器的页面真机调试。便捷的远程调试手机页面、抓包工具，支持：HTTP/HTTPS，无需USB连接设备。 (wuchangming)
 * [kap](https://github.com/wulkano/kap) - An open-source screen recorder built with web technology (wulkano)
 * [yarn](https://github.com/yarnpkg/yarn) - 📦🐈 Fast, reliable, and secure dependency management. (yarnpkg)
+* [wxdemo](https://github.com/yexiaochai/wxdemo) - 微信小程序demo咯 (yexiaochai)
 * [hyper](https://github.com/zeit/hyper) - A terminal built on web technologies (zeit)
 
 
