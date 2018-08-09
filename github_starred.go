@@ -65,8 +65,7 @@ func main() {
 			fmt.Printf("\n\n# %s\n\n", repo.Language)
 			language.Name = repo.Language
 		}
-		fmt.Printf("* [%s](%s)\n\n", repo.FullName, repo.HtmlUrl)
-		fmt.Println(">", repo.Description)
+		fmt.Printf("* [%s](%s) - %s (%s)\n", repo.Name, repo.HtmlUrl, repo.Description, repo.Owner)
 	}
 }
 
