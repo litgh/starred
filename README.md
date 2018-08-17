@@ -1,6 +1,6 @@
 * [100-Days-Of-ML-Code](https://github.com/Avik-Jain/100-Days-Of-ML-Code) - 100 Days of ML Coding (Avik-Jain)
 * [awesome-deep-learning](https://github.com/ChristosChristofidis/awesome-deep-learning) - A curated list of awesome Deep Learning tutorials, projects and communities. (ChristosChristofidis)
-* [Interview-Notebook](https://github.com/CyC2018/Interview-Notebook) - :bulb: 准备秋招学习笔记 (CyC2018)
+* [Interview-Notebook](https://github.com/CyC2018/Interview-Notebook) - :books: 技术面试需要掌握的基础知识整理 (CyC2018)
 * [awesome-design-patterns](https://github.com/DovAmir/awesome-design-patterns) - A curated list of software and architecture related design patterns. (DovAmir)
 * [cw2vec](https://github.com/ShelsonCao/cw2vec) - Details of paper cw2vec (ShelsonCao)
 * [design](https://github.com/WebAssembly/design) - WebAssembly Design Documents (WebAssembly)
@@ -187,6 +187,7 @@
 * [advanced-go-programming-book](https://github.com/chai2010/advanced-go-programming-book) - :books: 《Go语言高级编程》开源图书，涵盖CGO、Go汇编语言、RPC实现、Protobuf插件实现、Web框架实现、分布式系统等高阶主题 (chai2010)
 * [seaweedfs](https://github.com/chrislusf/seaweedfs) - SeaweedFS is a simple and highly scalable distributed file system. There are two objectives:  to store billions of files! to serve the files fast! SeaweedFS implements an object store with O(1) disk seek, and an optional Filer with POSIX interface. (chrislusf)
 * [chromedp](https://github.com/chromedp/chromedp) - A faster, simpler way to drive browsers supporting the Chrome DevTools Protocol. (chromedp)
+* [readline](https://github.com/chzyer/readline) - Readline is a pure go(golang) implementation for GNU-Readline kind library (chzyer)
 * [seelog](https://github.com/cihub/seelog) - Seelog is a native Go logging library that provides flexible asynchronous dispatching, filtering, and formatting. (cihub)
 * [cockroach](https://github.com/cockroachdb/cockroach) - CockroachDB - the open source, cloud-native SQL database. (cockroachdb)
 * [traefik](https://github.com/containous/traefik) - The Cloud Native Edge Router (containous)
@@ -208,6 +209,7 @@
 * [infrakit](https://github.com/docker/infrakit) - A toolkit for creating and managing declarative, self-healing infrastructure. (docker)
 * [swarmkit](https://github.com/docker/swarmkit) - A toolkit for orchestrating distributed systems at any scale. It includes primitives for node discovery, raft-based consensus, task scheduling and more. (docker)
 * [godropbox](https://github.com/dropbox/godropbox) - Common libraries for writing Go services/applications. (dropbox)
+* [gotab](https://github.com/dsnet/gotab) - Simple bash tab completion for the go command. (dsnet)
 * [pingo](https://github.com/dullgiulio/pingo) - Plugins for Go (dullgiulio)
 * [beats](https://github.com/elastic/beats) - :tropical_fish: Beats - Lightweight shippers for Elasticsearch & Logstash  (elastic)
 * [goproxy](https://github.com/elazarl/goproxy) - An HTTP proxy library for Go (elazarl)
@@ -347,9 +349,11 @@
 * [hydra](https://github.com/ory/hydra) - OpenID Connect certified OAuth2 Server - cloud native, security-first, open source API security for your infrastructure. Written in Go. SDKs for any language. (ory)
 * [ladon](https://github.com/ory/ladon) - A SDK for access control policies: authorization for the microservice and IoT age. Inspired by AWS IAM policies. Written for Go. (ory)
 * [realize](https://github.com/oxequa/realize) - Realize is the #1 Golang Task Runner which enhance your workflow by automating the most common tasks and using the best performing Golang live reloading. (oxequa)
+* [liner](https://github.com/peterh/liner) - Pure Go line editor with history, inspired by linenoise (peterh)
 * [tidb](https://github.com/pingcap/tidb) - TiDB is a distributed HTAP database compatible with the MySQL protocol  (pingcap)
 * [peg](https://github.com/pointlander/peg) - Peg, Parsing Expression Grammar, is an implementation of a Packrat parser generator. (pointlander)
 * [ponzu](https://github.com/ponzu-cms/ponzu) - Headless CMS with automatic JSON API. Featuring auto-HTTPS from Let's Encrypt, HTTP/2 Server Push, and flexible server framework written in Go. (ponzu-cms)
+* [complete](https://github.com/posener/complete) - bash completion written in go + bash completion for go command (posener)
 * [sup](https://github.com/pressly/sup) - Super simple deployment tool - think of it like 'make' for a network of servers (pressly)
 * [prometheus](https://github.com/prometheus/prometheus) - The Prometheus monitoring system and time series database. (prometheus)
 * [boom](https://github.com/rakyll/boom) - HTTP(S) load generator, ApacheBench (ab) replacement, written in Go (rakyll)
@@ -406,6 +410,7 @@
 * [fasttemplate](https://github.com/valyala/fasttemplate) - Simple and fast template engine for Go (valyala)
 * [gorpc](https://github.com/valyala/gorpc) - Simple, fast and scalable golang rpc library for high load (valyala)
 * [quicktemplate](https://github.com/valyala/quicktemplate) - Fast, powerful, yet easy to use template engine for Go. Optimized for speed, zero memory allocations in hot paths. Up to 20x faster than html/template (valyala)
+* [go-repl](https://github.com/vito/go-repl) - A Go REPL. Builds up a source .go file over time, compiles it for output. (vito)
 * [msgpack](https://github.com/vmihailenco/msgpack) - msgpack.org[Go] MessagePack encoding for Golang (vmihailenco)
 * [have](https://github.com/vrok/have) - The Have Programming Language (vrok)
 * [scope](https://github.com/weaveworks/scope) - Monitoring, visualisation & management for Docker & Kubernetes (weaveworks)
@@ -436,6 +441,7 @@
 * [gentelella](https://github.com/puikinsh/gentelella) - Free Bootstrap 3 Admin Template (puikinsh)
 * [awesome-resume](https://github.com/resumejob/awesome-resume) - 包含简历常用例句 (resumejob)
 * [github-corners](https://github.com/tholman/github-corners) - A fresher "Fork me on GitHub" callout. (tholman)
+* [codelf](https://github.com/unbug/codelf) - Best GitHub stars, repositories tagger and organizer. Search over projects from Github, Bitbucket, Google Code, Codeplex, Sourceforge, Fedora Project, GitLab to find real-world usage variable names (unbug)
 * [sheet](https://github.com/xem/sheet) - a tiny Excel clone (xem)
 
 
@@ -472,7 +478,7 @@
 * [classgraph](https://github.com/classgraph/classgraph) - An uber-fast, ultra-lightweight Java classpath scanner, module scanner, and annotation processor. (classgraph)
 * [chaos-monkey-spring-boot](https://github.com/codecentric/chaos-monkey-spring-boot) - Chaos Monkey for Spring Boot (codecentric)
 * [piper](https://github.com/creactiviti/piper) - piper - distributed workflow engine (creactiviti)
-* [Java-Interview](https://github.com/crossoverJie/Java-Interview) - 👨‍🎓 Java related : basic, concurrent, algorithm  (crossoverJie)
+* [JCSprout](https://github.com/crossoverJie/JCSprout) - 👨‍🎓 Java Core Sprout : basic, concurrent, algorithm  (crossoverJie)
 * [apollo](https://github.com/ctripcorp/apollo) - Apollo（阿波罗）是携程框架部门研发的分布式配置中心，能够集中化管理应用不同环境、不同集群的配置，配置修改后能够实时推送到应用端，并且具备规范的权限、流程治理等特性，适用于微服务配置管理场景。 (ctripcorp)
 * [dubbox](https://github.com/dangdangdotcom/dubbox) - Dubbox now means Dubbo eXtensions, and it adds features like RESTful remoting, Kyro/FST serialization, etc to the Dubbo service framework. (dangdangdotcom)
 * [java-driver](https://github.com/datastax/java-driver) - DataStax Java Driver for Apache Cassandra (datastax)
@@ -588,6 +594,7 @@
 * [freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) - The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits. (freeCodeCamp)
 * [CacheP2P](https://github.com/guerrerocarlos/CacheP2P) - "More users = More capacity" (guerrerocarlos)
 * [muuri](https://github.com/haltu/muuri) - Responsive, sortable, filterable and draggable grid layouts (haltu)
+* [graphqurl](https://github.com/hasura/graphqurl) - curl for GraphQL with autocomplete, subscriptions and GraphiQL. Also a dead-simple universal javascript GraphQL client. (hasura)
 * [html5slides](https://github.com/heldinz/html5slides) -  (heldinz)
 * [botkit](https://github.com/howdyai/botkit) - Botkit is the leading developer tool for building chat bots, apps and custom integrations for major messaging platforms. (howdyai)
 * [Manta](https://github.com/hql287/Manta) - 🎉 Flexible invoicing desktop app with beautiful & customizable templates. (hql287)
@@ -657,12 +664,12 @@
 * [prompts](https://github.com/terkelg/prompts) - ❯ Lightweight, beautiful and user-friendly interactive prompts (terkelg)
 * [booking-js](https://github.com/timekit-io/booking-js) - :date: Make a beautiful embeddable booking widget in minutes (timekit-io)
 * [uppy](https://github.com/transloadit/uppy) - The next open source file uploader for web browsers :dog:  (transloadit)
-* [vialer-js](https://github.com/vialer/vialer-js) - Pluggable WebRTC communication platform. (vialer)
+* [vialer-js](https://github.com/vialer/vialer-js) - Pluggable WebRTC softphone and communication platform. (vialer)
 * [vue](https://github.com/vuejs/vue) - 🖖 A progressive, incrementally-adoptable JavaScript framework for building UI on the web. (vuejs)
 * [vue-loader](https://github.com/vuejs/vue-loader) - 📦 Webpack loader for Vue.js components (vuejs)
 * [DBGlass](https://github.com/web-pal/DBGlass) - PostgreSQL client built with Electron. (web-pal)
 * [sketch-material](https://github.com/websiddu/sketch-material) - Sketch material is a sketch plugin that will help you generate complex material components like tables, chips, forms etc… (websiddu)
-* [wekan](https://github.com/wekan/wekan) - The open-source Trello-like kanban (built with Meteor) (wekan)
+* [wekan](https://github.com/wekan/wekan) - The open-source kanban (built with Meteor) (wekan)
 * [wired-elements](https://github.com/wiredjs/wired-elements) - Collection of elements that appear hand drawn. Great for wireframes. (wiredjs)
 * [spy-debugger](https://github.com/wuchangming/spy-debugger) - 微信调试，各种WebView样式调试、手机浏览器的页面真机调试。便捷的远程调试手机页面、抓包工具，支持：HTTP/HTTPS，无需USB连接设备。 (wuchangming)
 * [kap](https://github.com/wulkano/kap) - An open-source screen recorder built with web technology (wulkano)
@@ -766,6 +773,11 @@
 * [vscode](https://github.com/rainglow/vscode) - 320+ color themes for Visual Studio Code. (rainglow)
 
 
+# Swift
+
+* [KeyCast](https://github.com/cho45/KeyCast) - Record keystroke for screencast (cho45)
+
+
 # TeX
 
 * [deeplearningbook-chinese](https://github.com/exacity/deeplearningbook-chinese) - Deep Learning Book Chinese Translation (exacity)
@@ -778,6 +790,7 @@
 * [NativeScript](https://github.com/NativeScript/NativeScript) - NativeScript is an open source framework for building truly native mobile apps with JavaScript. Use web skills, like Angular and Vue.js, FlexBox and CSS, and get native UI and performance on iOS and Android. (NativeScript)
 * [ant-design](https://github.com/ant-design/ant-design) - 🐜 A UI Design Language (ant-design)
 * [deno](https://github.com/denoland/deno) - A secure TypeScript runtime on V8 (denoland)
+* [fiddle](https://github.com/electron/fiddle) - 🚀 The easiest way to get started with Electron (electron)
 * [grafana](https://github.com/grafana/grafana) - The tool for beautiful monitoring and metric analytics & dashboards for Graphite, InfluxDB & Prometheus & More (grafana)
 * [pandora](https://github.com/midwayjs/pandora) - A Manageable, Measurable and Traceable Node.js Application Manager represented by Alibaba powered by TypeScript (midwayjs)
 * [pnpm](https://github.com/pnpm/pnpm) - 📦🚀 Fast, disk space efficient package manager (pnpm)
