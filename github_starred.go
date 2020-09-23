@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"golang.org/x/net/proxy"
+	//"golang.org/x/net/proxy"
 )
 
 type Repo struct {
@@ -54,16 +54,16 @@ func (r *RepoSlice) print() {
 var next = regexp.MustCompile(`<(https://api\.github\.com/user/\d+/starred\?per_page=\d+&page=\d+)>; rel="next"`)
 
 func main() {
-	dialer, err := proxy.SOCKS5("tcp", "127.0.0.1:1080", nil, proxy.Direct)
-	if err != nil {
-		panic(err)
-	}
+	//dialer, err := proxy.SOCKS5("tcp", "127.0.0.1:1080", nil, proxy.Direct)
+	//if err != nil {
+	//	panic(err)
+	//}
 
 	var repositories = &RepoSlice{
 		client: &http.Client{
 			Transport: &http.Transport{
 				TLSHandshakeTimeout: 30 * time.Second,
-				Dial:                dialer.Dial,
+				//Dial:                dialer.Dial,
 			},
 		},
 	}
